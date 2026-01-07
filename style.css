@@ -9,6 +9,7 @@
     --light-blue: #EFF6FF;
     --border-gray: #E5E7EB;
     --muted-text: #475569;
+    --footer-bg: var(--dark-navy);
     --max-width: 1100px;
 }
 
@@ -241,7 +242,7 @@ button[type="submit"] {
 
 /* Footer */
 footer {
-    background: var(--dark-navy);
+    background: var(--footer-bg);
     color: white;
     padding: 40px 0;
     margin-top: 60px;
@@ -276,12 +277,13 @@ footer {
 
 /* Dark Theme Variables */
 .dark-theme {
-    --bg-white: #0B1220;
+    --bg-white: #071022;
     --primary-blue: #60A5FA;
     --dark-navy: #E6EEF8;
     --light-blue: #071733;
     --border-gray: #1F2937;
     --muted-text: #9AA6B2;
+    --footer-bg: #031025;
 }
 
 /* Theme toggle button */
@@ -310,4 +312,95 @@ body {
 /* Ensure footer adapts in dark mode */
 footer {
     transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Thank You Message (Hidden by default) */
+.form-message {
+    display: none;
+    background-color: #ECFEFF;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #67E8F9;
+    color: #0F172A;
+}
+/* Project card dark theme support */
+.card {
+    background-color: var(--light-blue);
+    color: var(--dark-navy);
+}
+
+.card h2, .card h3 {
+    color: var(--dark-navy);
+}
+
+.dark-theme .card {
+    background-color: #0A1628;
+    color: #E6EEF8;
+}
+
+.dark-theme .card h2,
+.dark-theme .card h3,
+.dark-theme .card h4 {
+    color: #E6EEF8;
+}
+
+.dark-theme .card p {
+    color: #9AA6B2;
+}
+
+.dark-theme .card ul {
+    color: #9AA6B2;
+}
+
+/* Contact Page Dark Theme */
+.dark-theme .contact-hero h1 {
+    color: var(--dark-navy);
+}
+
+.dark-theme .contact-hero p {
+    color: var(--muted-text);
+}
+
+.dark-theme .info-title,
+.dark-theme .form-title {
+    color: var(--dark-navy);
+}
+
+.dark-theme .contact-item {
+    color: var(--dark-navy);
+}
+
+.dark-theme .info-content label {
+    color: var(--muted-text);
+}
+
+.dark-theme .info-content span,
+.dark-theme .info-content a {
+    color: var(--dark-navy);
+}
+
+.dark-theme .icon-box {
+    background-color: #0A1628;
+    border: 1px solid var(--border-gray);
+    color: var(--primary-blue);
+}
+
+.dark-theme .form-group label {
+    color: var(--dark-navy);
+}
+
+.dark-theme .form-group input,
+.dark-theme .form-group textarea {
+    background-color: #0A1628;
+    border-color: var(--border-gray);
+    color: var(--dark-navy);
+}
+
+.dark-theme .form-group input::placeholder,
+.dark-theme .form-group textarea::placeholder {
+    color: var(--muted-text);
+}
+
+.dark-theme .form-wrapper {
+    border-left-color: #FFB800;
 }
